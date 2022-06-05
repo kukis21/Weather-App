@@ -1,0 +1,30 @@
+<%- include("partials/header") -%> 
+    <section class="weather">
+        <div>
+            <h1><%= city %></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="<%= iconURL %>" alt="Weather Icon" height="90%">
+            </div>
+            <div class="col-md-6">
+                <h1><%= temp %> °<%= degree %></h1>
+            </div>
+        </div>
+        <div>
+            <p><%=weatherDescription%> <br> Feels Like <%= tempFeelsLike %> °<%=degree%></p>
+        </div>
+        <div>
+            <p>Max: <%=tempMax%> °<%=degree%> &emsp; Min: <%=tempMin%> °<%=degree%></p>
+        </div>
+        <div>
+            <p>Humidity: <%=humidity%> % &emsp; Wind Speed: <%=windSpeed%> meter/sec</p>
+        </div>
+        <div>
+            <p>Pressure: <%=pressure%> hPa &emsp; Visibility: <%=visibility%> </p>
+        </div>
+        <form action="/weather" method="POST">
+            <button type="submit" class="btn btn-lg btn-info mp">Search again</button>
+        </form>
+    </section>
+<%- include("partials/footer") -%> 

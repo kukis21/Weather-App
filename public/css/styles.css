@@ -1,0 +1,43 @@
+body{
+    margin: 8%;
+    text-align: center;
+    background-color: rgba(87, 197, 233, 0.913);
+    color: rgb(13, 0, 111);
+    font-family: 'Merriweather', serif;
+}
+h1{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.radio{
+    font-weight: bold;
+}
+.mp{
+    margin: 1%;
+    padding: 1%;
+}
+.form-floating{
+    width: 25rem;
+    display: inline-block;
+    color: rgb(145, 144, 144);
+    
+}
+#cityName{
+    background-color: antiquewhite;
+}
+.btn{
+    width: 25%;
+    background-color: khaki;
+    color: rgb(62, 63, 63);
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+.footer{
+    margin-top: 55px;
+    font-size: 12px;
+    color: rgb(13, 0, 111);
+    font-family: 'Raleway', sans-serif;
+}
+.weather{
+    font-weight: bold;
+}
